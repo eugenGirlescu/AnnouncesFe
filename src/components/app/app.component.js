@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch,Route} from 'react-router-dom';
-import InfoCard from '../card/info.component';
+import InfoCard from '../car/info.component';
 import Announce from '../announce/announce.component';
 
 function App() {

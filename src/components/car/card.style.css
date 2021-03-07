@@ -1,0 +1,13 @@
+.imgOverride {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border: none !important;
+}
+.borderNone {
+  border: none !important;
+}
+.extra {
+  background: seashell;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 7px -2px;
+}

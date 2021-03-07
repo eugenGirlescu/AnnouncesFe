@@ -1,20 +1,23 @@
 import React from 'react';
 import { Button , Card} from 'react-bootstrap';
+import './card.style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 class CarCard extends React.Component {
 
     articleId = () => {
         this.props.onClick(this.props.object);
+        console.log(this.props);
     }
     
     render() {
         return(
-            <div className="card">
-                <Card>
-                    <Card.Img variant="top" src={`http://localhost:8000/images/${this.props.img}`}/>
-                    <Card.Body>
+            <div className="borderNone">
+                <Card className="borderNone">
+                    <Card.Img className="imgOverride" variant="top" src={`http://localhost:8000/images/${this.props.img}`}/>
+                    <Card.Body className="extra">
                         <Card.Title>{this.props.name}</Card.Title>
                         <Card.Text>
                         {this.props.description}

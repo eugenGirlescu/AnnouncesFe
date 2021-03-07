@@ -1,7 +1,7 @@
 import React from 'react';
 import './announce.style.css';
 import Title from '../title/title.component'
-import CarCard from '../card/card.component';
+import CarCard from '../car/card.component';
   
 
 class Announce extends React.Component {
