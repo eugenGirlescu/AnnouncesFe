@@ -12,7 +12,6 @@ body {
 .App .cars {
   height: 685px;
   overflow: auto;
-  margin: 0px;
 }
 
 .App .cars::-webkit-scrollbar-track {

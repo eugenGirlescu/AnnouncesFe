@@ -9,7 +9,6 @@ class CarCard extends React.Component {
 
     articleId = () => {
         this.props.onClick(this.props.object);
-        console.log(this.props);
     }
     
     render() {

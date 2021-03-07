@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import InfoTitle from '../title/info.component';
 
 class InfoCard extends React.Component {
@@ -8,8 +8,13 @@ class InfoCard extends React.Component {
         this.state={
             card: JSON.parse(localStorage.getItem("details"))
          }
+         this.goBack = this.goBack.bind(this); 
     }
 
+    goBack(){
+        this.props.history.goBack();
+    }
+    
     render() {
         console.log(this.state.card);
         return(
@@ -24,6 +29,7 @@ class InfoCard extends React.Component {
                                 <Card.Title>Descriere</Card.Title>
                                 {this.state.card.description}
                             </Card.Text>
+                            <Button variant="primary" onClick={this.goBack}>Inapoi</Button>
                         </Card.Body>
                  </Card>
             </div>
