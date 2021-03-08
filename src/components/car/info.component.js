@@ -20,7 +20,7 @@ class InfoCard extends React.Component {
         return(
             <div className="App">
                 <InfoTitle/>
-                <Card>
+                <Card className="borderNone">
                     <Card.Img variant="top" src={`http://localhost:8000/images/${this.state.card.image}`}/>
                         <Card.Body>
                                 <Card.Header><Card.Title>{this.state.card.price} {this.state.card.currency}</Card.Title></Card.Header>
